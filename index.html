@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        *{
+            margin: 0; 
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #part4, #part5, #part6, #part7, #part11, #part12, #part13, #section, #section2, #part2, #part3, #part1 {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #part4 img, #part5 img, #part6 img, #part7 img, #part10 img, #part11 img, #part12 img, #part13 img {
+            display: block;
+            max-width: 100%; 
+            height: auto;
+        }
+
+        li {
+            margin-left: 0; 
+        }
+
+        #navbar{
+            height: 70px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            border-bottom: 1px solid #ddd;
+            
+        }
+         #logo img{
+            height:40px;
+            width: 60px;
+            margin-right: 50px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+         #menu{
+            display: flex;
+            gap:20%;
+            justify-content: space-evenly;
+            border: 1px solid none;
+        } 
+        #searchbar{
+            flex:1;
+            margin: 0 20px;
+            display: flex;
+            border:1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: antiquewhite;
+            margin-right: 3%;
+            margin-left: 10%;
+        }
+        #searchbar input{
+            border:none;
+            flex:1;
+            background-color: antiquewhite;
+            padding: 4px;
+             width: 150px; 
+        }
+        #icons1{
+              font-size: 14px;
+              text-align: center;
+              gap:1px;
+              display: flex;
+        }
+        #icons1 i{
+            font-size: 18px;
+            margin-bottom: 3px;
+             display: block; 
+        }
+        #icons1{
+            cursor:pointer;
+        }
+        p{
+            margin-top:3%;
+        }
+        #div1{
+            margin-right: 4px;
+        }
+          #section{
+            height: 260px;
+            width: 100%;
+            background-color: white;
+         } 
+         #part1{
+             height: 70px;
+            width: 100%; 
+           
+         }
+         #part2{
+            height: 200px;
+            width: 100%;
+            background-color:white;
+         }
+         #part1 img{
+           height: 50px; 
+           width: 100%;
+           margin-top: 5px;
+           display: flex;
+         }
+         #part2 img{
+          height: 300px;
+          width: 100%; 
+          margin-top: 2px;
+         }
+         #part3 {
+            height:60px;
+            width: 100%;
+            background-color:white;
+     
+         }
+         #section2{
+            height: 188px;
+            width: 100%;
+            background-color: white;
+         }
+        .dropdown{
+            height: 600px;
+            width: 100%;
+            position: absolute;
+            top:75px;
+            display: none;
+         }
+          .dropdown_content{
+            line-height: 10px;
+           
+         } 
+         .dropdown_content:hover .dropdown{
+            display: block;
+            display: flex;
+            
+         }
+        .dropdown div{
+            height: 500px;
+            width: 50%;
+            
+        }
+        .dropdown div:nth-child(odd){
+            background-color: white;
+        }
+          .dropdown div:nth-child(even){
+             background-color: wheat;
+        }  
+        #colo1{
+            color:red;
+             font-size: 80%;
+            
+        }
+         #right{
+            margin-right: 50px;
+            margin-left: 20%;
+        } 
+        #k{
+            margin-right: 30%;
+        }
+        #Ne{
+            margin-left: 100%;
+        }
+        #G{
+            margin-left: 100%;
+        }
+        #B{
+            margin-left: 35%;
+        }
+        #H{
+            margin-left: 35px;
+        }
+        li{
+            line-height: 1.8;
+            margin-left: 180%;
+        }
+        #colo2{
+            color: black;
+            font-size: 100%;
+        }
+         #colo3{
+            color: black;
+             font-size: 100%;
+        }
+         #colo4{
+            color: black;
+             font-size: 100%;
+        }
+         #colo5{
+            color: black;
+             font-size: 100%;
+        }
+         #colo6{
+            color: black;
+             font-size: 100%;
+        }
+         #colo7{
+            color: black;
+             font-size: 100%;
+        }
+         #colo8{
+            color: black;
+             font-size: 100%;
+        }
+         #colo9{
+            color: black;
+             font-size: 100%;
+        }
+        hr{
+            color: black;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+         #row1{
+            color:red;
+             font-size: 80%;
+            
+        }
+
+        li{
+            line-height: 1.8;
+            margin-left: 180%;
+            color:black;
+        }
+        #row2{
+            color: black;
+            font-size: 100%;
+        }
+         #row3{
+            color: black;
+             font-size: 100%;
+             margin-left: 20%;
+        }
+         #row5{
+            color: black;
+             font-size: 100%;
+        }
+         #row6{
+            color: black;
+             font-size: 100%;
+        }
+         #row7{
+            color: black;
+             font-size: 100%;
+        }
+         #row8{
+            color: black;
+             font-size: 100%;
+        }
+         #row9{
+            color: black;
+             font-size: 100%;
+        }
+         #row9{
+            color: black;
+             font-size: 100%;
+        }
+        hr{
+            color: black;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+           #part4, #part5{
+            height:123px;
+            width:100vw;
+            display: flex;
+            grid-template-rows: 1fr 1fr;
+            padding-top:50px;
+
+           }
+            #part4 img{
+                height: 130px;
+                width: 245px;
+
+            }
+    
+            .item1{
+                margin-left: 2px;
+                margin-right: 4px;
+                
+            }
+            .item7{
+                padding-right: 5%;
+            }
+             #part5 img{
+                height: 130px;
+                width: 245px;
+            }
+            .shop1{
+                padding-left: 2%;
+            }
+            .item6{
+                padding-right: 5%;
+            }
+            #part5{
+            height:129px;
+            width:100%;
+            display: flex;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 100px;
+
+           }
+            #part6{
+            height:70px;
+            width:100%;
+            background-color: white;
+            margin-top: 40px; 
+            display: flex;
+
+           } 
+           #part6 img{
+            height: 70px;
+            width: 200px;
+            padding-left: 3%;
+            padding-right: 2%;
+           }
+           
+            #part7{
+            height:220px;
+            width:100%;
+            display: flex;
+            grid-template-rows: 1fr 1fr;
+           }
+            #part7 img{
+                height: 200px;
+                width: 200px;
+                margin-top: 8%;
+            }
+            .p1{
+                padding-left: 2%;
+            }
+            .p6{
+                padding-right: 5%;
+            }
+            #part10{
+                height: 110px;
+                width: 100%;
+                background-color: white;
+            }
+            .p8 img{
+              padding-left: 3%;
+             margin-top: 1%;
+            }
+             #part11{
+                height: 310px;
+                width: 100%;
+                background-color: white;
+                display: flex;
+               justify-content: space-evenly;   
+             }
+              #l1 img{
+                height: 300px;
+                width: 200px;
+             }
+             #l2 img{
+                height: 300px;
+                width: 200px;
+             }
+             #l3 img{
+                 height: 300px;
+                width: 200px;
+            
+                
+             }
+              #l4 img{
+                 height: 300px;
+                width: 200px;
+
+              }
+              #l0 img{
+                height: 300px;
+                width: 200px;
+             }
+              #l5 img{
+                height: 300px;
+                width: 200px;
+             } 
+             #l6 img {
+                height: 300px;
+                width: 200px;
+             }
+             #l7 img{
+                height: 300px;
+                width: 200px; 
+                
+                margin-top: 2%;
+             }
+             #l8 img{
+                 height: 300px;
+                width: 200px;
+             }
+              #l9 img{
+                 height: 300px;
+                width: 200px;
+              }
+              #l10 img{
+                height: 300px;
+                width: 200px;
+             }
+              #l11 img{
+                height: 300px;
+                width: 200px;
+                in-right: 3%; 
+             } 
+              #part12{
+                 height: 310px;
+                width: 100%;
+                background-color: white;
+                display: flex;
+                 justify-content: space-evenly; 
+               
+             } 
+             #part13{
+                  height: 310px;
+                width: 100%;
+                background-color: white;
+                display: flex;
+                justify-content: space-evenly;
+        
+             }
+              #l12 img {
+                height: 300px;
+                width: 200px;
+             }
+             #l13 img{
+                height: 300px;
+                width: 200px;
+             }
+             #l14 img{
+                 height: 300px;
+                width: 200px;
+
+             }
+              #l15 img{
+                 height: 300px;
+                width: 200px;
+                  }
+              #l16 img{
+                height: 300px;
+                width: 200px;
+             }
+              #l17 img{
+                height: 300px;
+                width: 200px;
+             }
+            
+                #box11{
+                    height: 500px;
+                    width: 100%;
+                    background-color: aqua;
+                   margin-top: 3%;
+                   
+                }
+                 #box12{
+                    height: 500px;
+                    width: 100%;
+                    background-color:purple;
+                   margin-top: 3%;
+                   margin-left: 1%;
+                   
+                }
+                  #box13{
+                    height: 300px;
+                    width: 100%;
+                    background-color: hotpink;
+                   margin-left: 100%;
+                   margin-bottom: 50%;
+                  
+                } 
+                #box14{
+                    height: 500px;
+                    width: 100%;
+                    background-color: indigo;
+                   margin-top: 3%; 
+                   
+                }
+               
+                    p a{
+                        color:gray;
+                    }
+               .app-links img{
+                width: 100%;
+                height: 120px;
+               
+                
+                
+               }
+               .social-icons a{
+                margin-right: 10px;
+                font-size: 18px;
+                color: #555;
+                text-decoration: none;
+               }
+               
+            
+                #line{
+                    line-height: 1;
+                    margin-top: 10%;
+                    margin-left: 5%;
+                    color:#555;
+                }
+                #line2{
+                    margin-top: 4%;
+                    line-height: 2;
+                    margin-left: 5%;
+                    color:magenta;
+                }
+                #line3{
+                    margin-top: 4%;
+                    line-height: 2;
+                    margin-left: 5%;
+                }
+                #contentfooter1{
+                    height: 500px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0,541);
+                    display: flex;
+                }
+                #foot1{
+                    height: 500px;
+                    width:100%;
+                    background-color: rgba(0,0,0,0,541);
+                }
+                #foot2{
+                      height: 500px;
+                    width:100%;
+                    background-color:rgba(0,0,0,0,541); 
+                }
+                #foot3{
+                      height: 500px;
+                    width:100%;
+                    background-color: rgba(0,0,0,0,541);
+                }
+        
+               #contentfooter2{
+                height: 180PX;
+                width: 100%;
+                background-color: rgba(0,0,0,0,541);
+              }
+               #contentfooter3{
+                height: 180PX;
+                width: 100%;               
+                }
+              
+                #contentfooter4{
+                height: 3000PX;
+                width: 100%;
+                 background-color:rgba(0,0,0,0,541);
+        
+
+                }
+               #contentfooter h4{
+                font-size: 20%;
+                margin-left: 10%;
+                  margin-top: 10%;
+               }
+                #contentfooter p{
+                    margin-left: 5%;
+                    
+                }  
+                 
+                #contentfooter li{ 
+                    line-height: 1%; 
+                } 
+                 #contentfooter7{
+                    height: 50000px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0,541);
+                    
+                }
+                #foot1 p{
+                    color:gray;
+                }
+                h6{
+                    font-size: 100%;
+                }
+               body> #baner{
+                    height: 200px;
+                    width: 30px;
+                    background-color: black;
+                    writing-mode: sideways-lr;
+                    position: fixed;
+                    top: 340px;
+                    left: 1480px;
+                    color:white;
+                    z-index: 2;
+                    font-size: 25px;
+                }
+             
+               
+    </style>
+</head>
+<body>
+     <div id="baner">UPTO<i class="fa-solid fa-indian-rupee-sign"></i>300 OFF</div>
+    <nav>
+        <div id="navbar">
+             <div id="logo"> 
+                <img src="/assest/Myntra_Logo.png"alt="">
+            </div>
+            
+             <div id="menu"> 
+                <div class="dropdown_content" style="border: 1px solid none;padding:30px 0;"><a id="A"href="">MEN</a>
+                <div class="dropdown">
+                    <div id="drop1">
+                        <a id="line2"style=color:magenta; href=""><b>Top Wear</b></a><br>
+                        <a id="line" href="">T-Shirts</a><br>
+                         <a id="line" href="">Causual</a><br>
+                          <a id="line" href="">Formal Shirts</a><br>
+                           <a id="line" href="">Sweatshirts</a><br>
+                           <a id="line" href="">Jackets</a><br>
+                           <a id="line" href="">Blazers & Coats</a><br>
+                           <a id="line" href="">Suits</a><br>
+                             <a id="line" href="">Rain Jackets</a><br><br>
+                             <hr style="color:gray;width:70%;"><br>
+                            
+                        <a id="line2" style="margin-top:50px; color:magenta" href=""><b>Indian&Festive Wear</b></a><br>
+                        <a id="line" href="">Kurta & Kurta Sets</a><br>
+                         <a id="line" href="">Sherwanis</a><br>
+                          <a id="line" href="">Nehru Jackets</a><br>
+                           <a id="line" href="">Dhotis</a><br>
+                           
+
+                    </div>
+                    <div id="box2">
+                         <a id="line2" href=""><b>Bottom Wear</b></a><br>
+                        <a id="line" href="">Jeans</a><br>
+                         <a id="line" href="">Casual trousers</a><br>
+                          <a id="line" href="">Shorts</a><br>
+                           <a id="line" href="">Sweatshirts</a><br>
+                           <a id="line" href="">Trackpankts&jogges</a><br><br>
+                            <hr style="color:gray;width:70%;"><br><br>
+                        <a id="line2" style="margin-top:50px;"href=""><b>Innerwear & sleeper</b></a><br>
+                        <a id="line" href="">Briefs Trunks</a><br>
+                         <a id="line" href="">Boxes</a><br>
+                          <a id="line" href="">Vests</a><br>
+                           <a id="line" href="">Sleepwear</a><br>
+                           <a id="line" href="">Thermals</a><br><br>
+                            <hr style="color:gray;width:70%;"><br><br>
+                             <a id="line2" style="margin-top:50px;"href=""><b>Plus size</b></a><br>
+                        
+                          
+                    </div>
+                    <div id="box3">
+                        <a id="line2"style="margin-top:50px; color:magenta;"href=""><b>Footwear</b></a><br>
+                        <a id="line" href="">Causal Shoes</a><br>
+                         <a id="line" href="">Sports shoes</a><br>
+                          <a id="line" href="">Sneakers</a><br>
+                           <a id="line" href="">Sandals</a><br>
+                           <a id="line" href="">Flip Flops</a><br>
+                           <a id="line" href="">Shoes</a><br>
+                           <a id="line" href="">Suits</a><br>
+                             <a id="line" href="">Rain Jackets</a><br><br>
+                             <hr style="color:gray;width:70%;"><br><br>
+                              <a id="line2" style="margin-top:50px; color:magenta;font-size: 80%;" href=""><b>Personal Care&Grooming</b></a><br>
+                              <a id="line2" style="margin-top:50px; color:magenta" href=""><b>Sunglasses</b></a><br>
+                             <a id="line2" style="margin-top:50px; color:magenta" href=""><b>Watches</b></a><br>
+                       
+                    </div>        
+                        
+
+                    
+
+                      
+                </div>
+                
+
+               </div>
+                </div> 
+                 <div><a id="right"href="">WOMAN</a></div>
+                
+
+                  <div><a id="k"href="">KIDS</a></div>
+                  <div> <a id="H"href="">HOME</a>
+                     
+    
+                </div> 
+                    
+                    
+                    
+                    <div><a id="B"href="">BEAUTY</a></div>
+                     <div><a id="G"href="">GENZ</a></div>
+                      <div><a id="Ne"href="">STUDIO<sup style="color:red; font-size: 10px;"><b>NEW</b></sup></a></div>
+                      <div id="searchbar">
+                      
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                       
+                            <input type="text"placeholder="Search for products brands">
+                        
+
+                      </div>
+                      <div id="icons1">
+                        <div1><i class="fa-solid fa-user"></i>
+                            Profile</div1>
+                       
+                       
+                            <div2><i class="fa-solid fa-heart"></i><p>Wishlist</p></div2>
+                            <div3><i class="fa-solid fa-bag-shopping"></i><p>Bag</p></div3>
+                        
+
+                       </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div id="section">
+        <div id="part1">
+            <div><a1 href=""><img src="/assest/discoun_coupon.webp"></a1></div>
+        </div>
+        <div id="part2" style=" display: flex;">
+                <img src="/assest/5MvxylRR_f4b25ecf83bd4119b39f268d3057a02e.webp"  
+                style="margin-left: 30px;" >
+                <img src="/assest/mi58JXAn_71960a5b5f2a4c2ebe37f9c338e3d4c4.webp"style="margin-right:16px;"> 
+        </div>
+    </div>
+    <div id="section2">
+        <div id="part3">
+            <img src="/assest/sponser" style=" height: 70px; width: 100%; margin-top: 150px;">
+             <div>
+                <img src="/assest/IMG-20250913-WA0023.jpg" alt="">
+
+            </div>
+            <div id="part4">
+                <div>
+                    <img src="/assest/IMG-20250913-WA0002.jpg">
+                </div>
+                <div class="item">
+                    <img src="/assest/IMG-20250913-WA0004.jpg" >
+                </div>
+                <div class="item">
+                    <img src="/assest/IMG-20250913-WA0003.jpg">
+                </div>
+                <div class="item">
+                    <img src="/assest/IMG-20250913-WA0005.jpg">
+                </div>
+                <div class="item">
+                    <img src="/assest/IMG-20250913-WA0006.jpg">
+
+                </div>
+            </div>
+            
+            <div id="part5">
+                <div class="shop1">
+                    <img src="/assest/IMG-20250913-WA0008.jpg">
+                </div>
+                <div class="shop2">
+                    <img src="/assest/IMG-20250913-WA0009.jpg">
+                </div>
+                <div class="shop3">
+                    <img src="/assest/IMG-20250913-WA0010.jpg">
+                </div>
+                <div class="shop4">
+                    <img src="/assest/IMG-20250913-WA0011.jpg">
+                </div>
+                <div class="shop5">
+                    <img src="/assest/IMG-20250913-WA0012.jpg">
+                </div>
+                </div>
+
+               <div id="part6">
+                <div class="shop7">
+                <img src="">
+                </div> 
+                
+               </div>
+               <div id="part7">
+                <div class="p1">
+                 <img src="/assest/IMG-20250913-WA0013.jpg"> 
+                </div>
+                 <div class="p2">
+                 <img src="/assest/IMG-20250913-WA0014.jpg"> 
+                </div>
+                 <div class="p3">
+                 <img src="/assest/IMG-20250913-WA0015.jpg"> 
+                </div>
+                 <div class="p4">
+                 <img src="/assest/IMG-20250913-WA0016.jpg"> 
+                </div>
+                 <div class="p5">
+                 <img src="/assest/IMG-20250913-WA0017.jpg">
+                </div>
+                <div class="p6">
+                 <img src="/assest/IMG-20250913-WA0018.jpg">
+                </div>
+            
+               
+               </div>
+               <div id="part10">
+                <div class="p8">
+                    <img src="/assest/IMG-20250913-WA0023.jpg"height="90px"width="100%";>
+                </div>
+                
+                
+               </div>
+
+             <div id="part11">
+              <div id="l1">
+                <img src="/assest/IMG-20250913-WA0018.jpg">
+              </div>
+               <div id="l2">
+                <img src="/assest/IMG-20250913-WA0031.jpg">
+              </div>
+                 <div id="l3">
+                <img src="/assest/IMG-20250913-WA0020.jpg">
+              </div>
+                <div id="l4">
+                <img src="/assest/IMG-20250913-WA0021.jpg">
+              </div>
+                 <div id="l0">
+                <img src="/assest/IMG-20250913-WA0028.jpg">
+              </div>
+                </div>
+
+                <div id="part12">
+                <div id="l6">
+                 <img src="/assest/IMG-20250913-WA0024.jpg"> 
+              </div>
+                             <div id="l7">
+                 <img src="/assest/IMG-20250913-WA0025.jpg"> 
+              </div>
+                              <div id="l8">
+                <img src="/assest/IMG-20250913-WA0026.jpg"> 
+              </div>
+                             <div id="l9">
+                <img src="/assest/IMG-20250913-WA0019.jpg">
+              </div>
+                             <div id="l10">
+                <img src="/assest/IMG-20250913-WA0022.jpg">
+              </div>
+              </div>
+              <div id="part13">
+                <div id="l11">
+                <img src="/assest/IMG-20250913-WA0013.jpg">
+              </div>
+              <div id="l12">
+                <img src="/assest/IMG-20250913-WA0029.jpg">
+              </div>
+                             <div id="l13">
+                <img src="/assest/IMG-20250913-WA0032.jpg">
+              </div>
+                             <div id="l14">
+                <img src="/assest/WhatsApp Image 2025-09-12 at 14.31.03_e93a6e4b.jpg">
+              </div>
+              <div id="l15">
+                <img src="/assest/WhatsApp Image 2025-09-12 at 19.34.22_cebea36f.jpg">
+              </div>
+                            
+               
+              </div>
+              <footer>
+                <div id="contentfooter1">
+                    <div id="foot1">
+                         <h4>ONLINE SHOPPING</h4>
+                 
+                 <p style="font-size: 20px";>
+                    <a style="color: #555;" href="">Men</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;" href="">Woman</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;"href="">Kids</a></p>
+                <p style="font-size: 20px" 
+                                       ;><a style="color: #555;" href="">Home</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;" href="">Beauty</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;"href="">Genz</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;"href="">Gift Cards</a></p>
+                <p style="font-size: 20px" 
+                                       ;><a style="color: #555";href="">Myntra Insider</a></p>
+                <br>
+                <h4>USEFUL LINKS</h4>
+                 <p style="font-size: 20px"
+                                    ;><a style="color: #555;" href="">Blog</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;" href="">Careers</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555;" href="">Slite Map</a></p>
+                <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Corporate Information</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555"href="#">Whitehat</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Clartrip</a></p>
+                 <p style="font-size: 20px" 
+                                  ;><a style="color: #555"href="#">Myntra Global</a></p>
+                
+                    </div>
+                                        <div id="foot2">
+                                            <h4>CUSTOMER POLICIES</h4>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Contact Us</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555"href="#">FAQ</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Terms of Use</a></p>
+                <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Track Orders</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Shipping</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Cancellation</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555"href="#">Returns</a></p>
+                                       
+                                      
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555" href="#">Privacy Policy</a></p>
+                 <p style="font-size: 20px" 
+                                       ;><a style="color: #555"href="#">Grievence REDRESSAL</a></p>
+                
+                
+
+                                        </div>
+                  <div id="foot3">
+                     <h4>EXPERIENCE MYNTRA APP ON MOBILE</h4>
+        <div style="height: 120; margin-top: 5%;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        <h4>KEEP IN TOUCH</h4>
+        <div style="margin-top: 5%;" class="social-icons">
+          <a style="font-size: 30px;" href=""><i class="fa-brands fa-twitter"></i></a>
+          <a style="font-size: 30px;" href=""><i class="fa-solid fa-camera"></i></a>
+          <a style="font-size: 30px;" href=""><i class="fa-brands fa-facebook"></i></a>
+          <a style="font-size: 30px;"href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+                  </div>
+                                      <div id="foot4"></div>
+
+                </div>
+              </footer>
+            
+          <br>
+          <br>
+          <br>
+          <br>
+               <div id="contentfooter2" >
+                
+                <p><h4>POPULAR SEARCHES</h4></p>
+                <p style="margin-right: 10%;">Makeup | Dresses For Girls T-Shirts | Sandals Headphones Babydolls Blazers For Men Handbags | Ladies Watches | Bags | Sport Shoes Reebok Shoes Puma Shoes | Boxers | Wallets | Tops Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings Cricket Shoes | Forever 21 | Eye Makeup Photo Frames | Punjabi Suits Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses Lehenga|Shoes Goggles | Bras Suit | Chinos Shoes Adidas Shoes Woodland Shoes | Jewellery | Designers Sarees
+                </p>
+                <p style="font-size: 18px;"> In Case of any Concern,<B> Contact Us</B></p>
+                <p style="position: relative;left: 40%;top: -70px;">&copy;2025 www.myntra.com. All rights reserved</p>
+                 <p style="position: relative;left: 80%;top: -130px;">A Flipkart Company </p>
+                <br>
+               
+            
+              </div>
+              <hr style="width:100%"  >
+              <div id="contentfooter3"><br>      
+<pre><h6><strong>
+Registered Office Address</strong></h6>
+ Buildings Alyssa
+ Begonia and Clover situated in Embassy Tech Village,<br>
+ Outer Ring Road,
+ Devarabeesanahalli Village,
+ Varthur Hobli,
+ Bengaluru – 560103, India</pre>
+</div>
+      <hr style="color:aliceblue;   width: 100%">
+      
+    <br>
+    <div id="contentfooter7">
+       <div id="contentfooter4">
+        <h4 style="color:#555; margin-top: 4%; margin-left: 0px;">ONLINE SHOPPING MADE EASY AT MYNTRA</h4>
+        <p style="color:#555;"> If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. 
+      Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, 
+      footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. 
+      Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home 
+      and get your favourites delivered right to your doorstep.</p>
+      <h4 style="color:#555;margin-top: 3%;">BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</h4>
+      <p style="color:#555"> Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. 
+      You will realize that the sky is the limit when it comes to types of outfits that you can purchase for different occasions.
+    </p>
+    <ol>
+        <li
+         style="margin-left: 5%; color:#555"><b>Smart mens clothing</b> At Myntra you will find myriad options in smart format shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets, Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.
+         </li>
+         <br>
+         <li style="margin-left: 5%;"><b>Tready Woman's Clothing-</b>Online shopping for women at Myntra is a mood-elevating experience. Look hip anit stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nauticul fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a low. Team them up with skinny fit jeans, skirts or palazzus. Kurtis and jeans make the perfect fusion wear combination for the cool urtsanite. Our grand sarees and lehenga-choll selections are perfect to make an impression at big social events such as weddings. Our salwar-kamenz sets, kurtas and Patiala suits make comfortable options for regular wear</li>
+        <li style="margin-left: 5%;"><b>Fashionable footwear-</b>While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an ext casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for yo shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casu sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, a best of comfort and style with embellished and metallic flats.
+</li>
+<li style="margin-left: 5%;"><b>Stylish accessories-</b>Myntra is one of the best online shopping sites for classy accessories that perfectly complement your outfits. Y digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in styl jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options.
+</li>
+<li style="margin-left: 5%;"><b>Fun and frolic-</b>Online shopping for kids at Myntra is a complete joy. Your little princess is going to love the wide variety of pretty dre headbands and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and much more from our onlin of toys with which you can create memories to cherish.
+</li>
+<li style="margin-left: 5%;"><b>Beauty begins here-</b>ou can also refresh, rejuvenate and reveal beautiful skin with personal care, beauty and grooming products fa gels, skin care creams, lotions and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty.
+</li>
+<p>Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personali linen and curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants are sure to your home</p>
+
+    </ol>
+    <h4 style="margin-top: 2%;"><b>AFFORDABLe FASHION AT YOUR FINGERTIPS</b></h4>
+    <P>Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest designer clothing, footwear and accessories in the market. You can get your hands on the trendiest style every season in western wear. You can also avail the best of ethnic fashion during all Indian festive occasions. You are sure to be impressed with our seasonal discounts on footwear, trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable</P>
+       <h4 style="margin-top: 1%;"><b>MYNTRA INSIDER</b></h4>
+       <p>Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Myntra Insider was introduced to enhance your online experience. The program is applicable to every registered customer and measures rewards in the form of Insider Prints.<br>There are four levels to achieve in the program, as the Insider Points accumulate. They are-Insider, Select, Elite or Icon. Apart from offering discounts on Myntra and partner platform coupons, each fier comes with its own special perks
+</p>   
+       <dl>
+        <dt style="margin-top: 2%;"><b>Insider</b></dt>
+       </dl>
+        <p style="margin-left: 2%;">Opportunity to master any domain in fashion with tips from celebrity stylists at Myntra Masterclass sessions<br>Curated collections from celeb stylists.Elite</p>
+    <dt style="margin-top: 2%;"><b>Elite</b></dt>
+       </dl>
+        <p style="margin-left: 2%;">VIP access to special sale events such as the End of Reason Sale (EDRS) and product launches<br>Exclusive early access to Limited Edition products</p>
+    <dt style="margin-top: 2%;"><b>Icon</b></dt>
+       </dl>
+        <p style="margin-left: 2%;">Chance to get on guest lists for specialevents</p>
+    </dl>
+    
+    <h4 style="margin-top: 2%;">Myntra studio- The personalised fashinon Feed You Wouldn't Want to Miss out on</h4>
+    <p>The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming was for this very reason that personalisation of search feeds was proposed as a solution to combat the overload of irrelevant information.<br><br>Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter contes engagement, retention and customer loyalty.<br><br>Myntra is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed. Named the Myntra Stu feed brings you the latest men and women's fashion trends, celebrity styles, branded content and daily updates from your favourite fashion<br><br>If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful, and personalised fashion</p>
+     <ol>
+        <li style="margin-left: 5%; line-height: 1; margin-top: 2%;"><b>Keep Up With What Your Favourite Icons Are Upto</b><br>The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion bloggers and stylists. The whole concept of building an showcasing it to a huge community of enthusiasts using the hashtag has helped individuals with understanding trends and making<br> <br>Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto. From Sonam Kapoor Myntra Studio has a 'Stories' feature to help track celebrity fashion trends, exploring details such as their outfit of the day. This way, you the latest celebrity fashion trends, from all around the world.
+</li>
+ <li style="margin-left: 5%; line-height: 1; margin-top: 2%;"><b>Quick Fashion Tip And Tricks</b><br>
+Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heav will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wearout wardrobe.
+</li>
+ <li style="margin-left: 5%; line-height: 1; margin-top: 2%;"><b>Updates on What is Trending and New Product Launches</b><br>
+Since fast fashion seems to be extremely hard to keep up with these days, a quick update on what is trending in accessories, clothing and footwear would certainly be of great help. Myntra Studio helps you stay connected to the most beloved and sought after brands such as Puma, Coverstory, The Label Life and so many more.<br><br>Your feed keeps you updated with stories of what the brands are creating including clothing, footwear and jewellery, along with their new seasonal collections.
+</li>
+ <li style="margin-left: 5%; line-height: 1; margin-top: 2%;"><b>Explicit step-by-step Beauty Routines From Experts</b><br>
+ust like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, are constantly coming up with mind-blowing products. Whether it is creating a no-makeup look, different winged eyeliners, do-it-yourself facial masks and other personal care beauty routines, Myntra Studio is here for you.
+</li>
+ <li style="margin-left: 5%; line-height: 1; margin-top: 2%;"><b>Celebrity confession And A Look into Their Lives</b><br>
+A bonus feature that Myntra Studio has in store for you is celebrity confessions and a peek into their lives. So, Myntra helps you stay connected to your most beloved celebrities in a matter of clicks.<br>
+
+If you are very particular when it comes to the content you wish to view and engage with on social media, the ability to intricately filter content helps achieve that. Applying the same formula for hardcore fashion lovers and shoppers, Myntra Studio brings you a daily fashion fix incorporating everything that you love, all at one place. Sign up on Myntra today and start organising your fashion feed, just the way you want to
+
++yer. Additionally, the try-and-buy option for select products takes customer-friendliness to the next level.<BR><BR>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You can also shop for your frie services for special occasions.</P>
+        </div>
+        </div>
+            </footer>  
+        </div>
+    </div>
+</body>
+</html>
